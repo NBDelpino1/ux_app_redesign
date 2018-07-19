@@ -1,7 +1,8 @@
 /*TODO - DESIGNED FOR MOBILE FIRST, NEED TO INCORPORATE SOME MEDIA QUERIES TO HANDLE LARGER // CLEAN UP CSS AND ASSIGN MORE SYMANTIC NAMING CONVENTION*/
 
 body {
-    background-image: url('../images/main-bg.png');
+    /*background-image: url('../images/main-bg.png');*/
+    background-image: url('../images/main-bg-2.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -80,7 +81,7 @@ body {
 .questions-container {
     height:262px;
     background-color: #fff;
-    background-image: url('../images/mobile-bg.png');
+    background-image: url('../images/mobile-bg-2.png');
     border-bottom: 1px solid #D8D8D8;
     padding:20px;
     position: relative;
@@ -161,6 +162,7 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 .answer-text {
+    font-size:13px;
     position: absolute;
     width:100%;
     padding-left:5px !important;
