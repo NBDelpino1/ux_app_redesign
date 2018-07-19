@@ -1,7 +1,4 @@
-/*TODO - DESIGNED FOR MOBILE FIRST, NEED TO INCORPORATE SOME MEDIA QUERIES TO HANDLE LARGER // CLEAN UP CSS AND ASSIGN MORE SYMANTIC NAMING CONVENTION*/
-
 body {
-    /*background-image: url('../images/main-bg.png');*/
     background-image: url('../images/main-bg-2.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -80,11 +77,10 @@ body {
 }
 .questions-container {
     height:262px;
-    background-color: #fff;
-    background-image: url('../images/mobile-bg-2.png');
     border-bottom: 1px solid #D8D8D8;
     padding:20px;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.23);
 }
 .answers-container {
     clear: left;
@@ -162,7 +158,6 @@ p, h1, h2, h3, h4, h5, h6{
 }
 
 .answer-text {
-    font-size:13px;
     position: absolute;
     width:100%;
     padding-left:5px !important;
@@ -186,7 +181,7 @@ p, h1, h2, h3, h4, h5, h6{
     margin-bottom:5px;
 }
 .answer-button {
-    width:80px;
+    width:120px;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -243,4 +238,26 @@ p.stats-text {
 }
 .temp-style {
     border-bottom: 3px solid #59568E;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .level-text {
+        font-size:13px;
+        padding-top:5px;
+    }
+    .answer-text {
+        font-size:13px;
+    }
+    .answer-button {
+        width:80px;
+    }
+    .questions-container {
+        background-image: url('../images/mobile-bg-2.png');
+    }
+    .logo-img {
+        width:250px;
+        margin-bottom:50px;
+    }
 }
